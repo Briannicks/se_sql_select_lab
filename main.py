@@ -74,7 +74,7 @@ df_day_month_year = pd.read_sql("""
            STRFTIME('%d', orderDate) AS day,
            STRFTIME('%m', orderDate) AS month,
            STRFTIME('%Y', orderDate) AS year
-    FROM orderDetails
+    FROM orders
 """, conn)
 
 # Close the connection
